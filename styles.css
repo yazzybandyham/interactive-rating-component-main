@@ -185,3 +185,13 @@ Thank you State
 .hidden {
     display: none;
 }
+
+/*
+=============== 
+Attribution
+===============
+*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
