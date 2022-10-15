@@ -59,7 +59,7 @@ main {
   place-items: center;
 }
 
-.container {
+.start-container, .end-container {
     max-width: 450px;
     background-color: var(--dark-blue);
     border-radius: 1rem;
@@ -68,7 +68,7 @@ main {
   }
 
 @media (max-width: 376px) {
-    .container {
+    .start-container, .end-container {
         margin: 0rem;
       }
 }
@@ -84,6 +84,25 @@ a {
     cursor: pointer;
 }
 
+ul {
+    list-style-type: none;
+}
+
+button {
+    color: var(--light-grey);
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+button:focus {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 /*
 =============== 
 Rating State
@@ -94,45 +113,41 @@ Rating State
 }
 
 .ratings {
-    margin-bottom: 1rem;
-    
+    margin: 2rem 0;
 }
 
 .flex-align {
     display: flex;
-    align-content: space-around;
-    padding: 20px 0px;
+    justify-content: space-between;
 }
 
 .circle {
     display: inline-block;
     background-color: var(--dark-grey);
-    margin-right: 1rem;
     width: 2.75rem;
     height: 2.75rem;
     border-radius: 50%;
     text-align: center;
+    border: none;
 }
 
-.star-circle {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 auto;
-}
-
-.star-img {
-   
+.start-container img {
+    background-color: var(--dark-grey);
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 .btn {
     background-color: var(--primary);
     color: var(--white);
-    padding: 0.75rem 7.5rem;
+    width:100%;
+    padding: 0.7rem 0 0.7rem;
     border-radius: 2rem;
     text-transform: uppercase;
+    border: none;
 }
 
-.btn:hover {
+.btn:active {
     background-color: var(--white);
     color: var(--primary);
 }
@@ -142,6 +157,30 @@ Rating State
 Thank you State
 ===============
 */
+
+.end-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.end-container img {
+    width: 9rem;
+    padding-bottom: 1rem;
+}
+
+.rated {
+    background-color: var(--dark-grey);
+    color: var(--primary);
+    padding: 0.35rem 0.75rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rated-text {
+    text-align: center;
+}
 
 .hidden {
     display: none;

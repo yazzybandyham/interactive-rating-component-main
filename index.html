@@ -27,21 +27,23 @@
 <!------------------
   Rating state start 
 ------------------->
-  <div class="container">
-    <div class="circle star-circle"><img class="star-img" src="/images/icon-star.svg" alt=""></div>
+  <div class="start-container">
+    <img src="/images/icon-star.svg" alt="">
     <div class="rate-text"> 
       <h1>How did we do?</h1>
 
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     </div>
-    <div class="ratings flex-align">
-      <div class="circle"><a>1</a></div>
-      <div class="circle"><a>2</a></div>
-      <div class="circle"><a>3</a></div>
-      <div class="circle"><a>4</a></div>
-      <div class="circle"><a>5</a></div>
+    <div class="ratings">
+      <ul class="flex-align">
+        <li><button class="circle">1</button></li>
+        <li><button class="circle">2</button></li>
+        <li><button class="circle">3</button></li>
+        <li><button class="circle">4</button></li>
+        <li><button class="circle">5</button></li>
+      </ul>
     </div>
-    <a href="" class="btn">Submit</a>
+    <button class="btn" id="submit">Submit</button>
   </div>
 <!---------------- 
   Rating state end 
@@ -50,10 +52,10 @@
  <!---------------------
    Thank you state start 
   --------------------->
-  <div class="container hidden">
+  <div class="end-container hidden">
     <img src="/images/illustration-thank-you.svg" alt="">
     <div class="rated">
-      <p>You selected <span id="rating">4</span> out of 5</p>
+      <p>You selected <span id="rating">  </span> out of 5</p>
     </div>
     <div class="rated-text">
       <h1>Thank you!</h1>
